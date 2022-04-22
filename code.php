@@ -152,10 +152,10 @@ if (isset($_POST['deletefile_btn'])) {
     $query_run = mysqli_query($connection, $query);
 
     if ($query_run) {
-        $_SESSION['success'] = "Yor File is DELETED";
+        $_SESSION['success'] = "Your File is DELETED";
         header('Location: index.php');
     } else {
-        $_SESSION['status'] = "Yor File is NOT DELETED";
+        $_SESSION['status'] = "Your File is NOT DELETED";
         header('Location: index.php');
     }
 }

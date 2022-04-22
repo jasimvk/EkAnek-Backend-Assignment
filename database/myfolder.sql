@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2022 at 08:17 AM
+-- Generation Time: Apr 22, 2022 at 08:36 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -40,7 +40,7 @@ CREATE TABLE `files` (
 --
 
 INSERT INTO `files` (`id`, `title`, `description`, `filename`, `created_by`) VALUES
-(0, 'erer', 'erere', 'PAYSLIP(YAS233).pdf', 'jasim@me.com');
+(2, 'w', 'w', 'SIBCA AMC.pdf', 'jasim@me.com');
 
 -- --------------------------------------------------------
 
@@ -70,6 +70,12 @@ INSERT INTO `register` (`id`, `username`, `email`, `password`, `usertype`) VALUE
 --
 
 --
+-- Indexes for table `files`
+--
+ALTER TABLE `files`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `register`
 --
 ALTER TABLE `register`
@@ -78,6 +84,12 @@ ALTER TABLE `register`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `files`
+--
+ALTER TABLE `files`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `register`
