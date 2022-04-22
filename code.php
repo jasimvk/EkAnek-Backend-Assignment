@@ -113,7 +113,7 @@ if (isset($_POST['uploadfilebtn'])) {
 
 
 
-    $path = 'Uploads';
+    $path = 'Uploads/';
 
     if (!empty($name)) {
         if (file_exists($name)) {

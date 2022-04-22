@@ -160,18 +160,18 @@ if (isset($_POST['deletefile_btn'])) {
     }
 }
 
-if (isset($_POST['sharefile_btn'])) {
+// if (isset($_POST['sharefile_btn'])) {
 
-    $url = $_POST["url"];
-    $short_code = substr(md5(uniqid(rand(), true)), 0, 3); // creates a 3 digit unique short id. You can maximize it but remember to change .htacess value as well
+//     $url = $_POST["url"];
+//     $short_code = substr(md5(uniqid(rand(), true)), 0, 3); // creates a 3 digit unique short id. You can maximize it but remember to change .htacess value as well
 
-    $sql = "INSERT INTO url_shorten (url, short_code)
-           VALUES ('$url', '$short_code')";
+//     $sql = "INSERT INTO url_shorten (url, short_code)
+//            VALUES ('$url', '$short_code')";
 
-    $query_run = mysqli_query($connection, $query);
+//     $query_run = mysqli_query($connection, $query);
 
-    if ($query_run) {
+//     if ($query_run) {
 
-       echo  "success";
-    }
-}
+//        echo  "success";
+//     }
+// }
